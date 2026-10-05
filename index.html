@@ -17,6 +17,87 @@
     <main>
         <h2>Organizador de tarefas</h2>
         <p>Sistema para organizar tarefas pessoais.</p>
+
+        <section id="cadastro">
+            <h2>Cadastrar tarefa</h2>
+
+            <form>
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo">
+
+                <br><br>
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao"></textarea>
+
+                <br><br>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data">
+
+                <br><br>
+
+                <label for="prioridade">Prioridade:</label>
+                <select id="prioridade" name="prioridade">
+                    <option>Baixa</option>
+                    <option>Média</option>
+                    <option>Alta</option>
+                </select>
+
+                <br><br>
+
+                <label for="status">Status:</label>
+                <select id="status" name="status">
+                    <option>Pendente</option>
+                    <option>Em andamento</option>
+                    <option>Concluída</option>
+                </select>
+
+                <br><br>
+
+                <button type="button">Cadastrar</button>
+            </form>
+        </section>
+
+        <section id="tarefas">
+            <h2>Tarefas cadastradas</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Data</th>
+                        <th>Prioridade</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Fazer trabalho de HTML</td>
+                        <td>11/10/2026</td>
+                        <td>Alta</td>
+                        <td>Em andamento</td>
+                        <td>
+                            <button type="button">Editar</button>
+                            <button type="button">Excluir</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Estudar para prova</td>
+                        <td>15/10/2026</td>
+                        <td>Média</td>
+                        <td>Pendente</td>
+                        <td>
+                            <button type="button">Editar</button>
+                            <button type="button">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 
     <footer>
