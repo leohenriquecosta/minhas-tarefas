@@ -11,6 +11,9 @@
 
         <nav>
             <a href="#">Início</a>
+            <a href="#cadastro">Cadastrar</a>
+            <a href="#tarefas">Tarefas</a>
+            <a href="#detalhes">Detalhes</a>
         </nav>
     </header>
 
@@ -62,6 +65,26 @@
         <section id="tarefas">
             <h2>Tarefas cadastradas</h2>
 
+            <label for="pesquisa">Pesquisar:</label>
+            <input type="search" id="pesquisa" name="pesquisa">
+
+            <label for="filtro">Filtrar:</label>
+            <select id="filtro" name="filtro">
+                <option>Todas</option>
+                <option>Pendente</option>
+                <option>Em andamento</option>
+                <option>Concluída</option>
+            </select>
+
+            <label for="ordenacao">Ordenar:</label>
+            <select id="ordenacao" name="ordenacao">
+                <option>Data</option>
+                <option>Título</option>
+                <option>Prioridade</option>
+            </select>
+
+            <br><br>
+
             <table>
                 <thead>
                     <tr>
@@ -80,6 +103,7 @@
                         <td>Alta</td>
                         <td>Em andamento</td>
                         <td>
+                            <a href="#detalhes">Detalhes</a>
                             <button type="button">Editar</button>
                             <button type="button">Excluir</button>
                         </td>
@@ -91,6 +115,7 @@
                         <td>Média</td>
                         <td>Pendente</td>
                         <td>
+                            <a href="#detalhes">Detalhes</a>
                             <button type="button">Editar</button>
                             <button type="button">Excluir</button>
                         </td>
@@ -98,6 +123,19 @@
                 </tbody>
             </table>
         </section>
+
+        <section id="detalhes">
+            <h2>Detalhes da tarefa</h2>
+
+            <article>
+                <h3>Fazer trabalho de HTML</h3>
+                <p>Descrição: Fazer a primeira etapa do trabalho.</p>
+                <p>Data: 11/10/2026</p>
+                <p>Prioridade: Alta</p>
+                <p>Status: Em andamento</p>
+            </article>
+        </section>
+
     </main>
 
     <footer>
