@@ -41,3 +41,119 @@ th, td {
     padding: 8px;
     text-align: left;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    margin-right: 0;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#cadastro form {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 12px;
+    align-items: center;
+}
+
+#cadastro form br {
+    display: none;
+}
+
+#cadastro input,
+#cadastro select,
+#cadastro textarea {
+    width: 100%;
+    min-width: 0;
+}
+
+#cadastro button {
+    grid-column: 2;
+    justify-self: start;
+}
+
+#tarefas input,
+#tarefas select {
+    max-width: 100%;
+    margin: 5px 10px 10px 0;
+}
+
+.tabela {
+    overflow-x: auto;
+}
+
+th {
+    background-color: #e5e5e5;
+}
+
+button {
+    background-color: #234567;
+    color: white;
+    border: 1px solid #234567;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #37658d;
+}
+
+nav a:hover {
+    color: #ffdf89;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid #e5a63b;
+    outline-offset: 2px;
+}
+
+#detalhes article {
+    border-left: 3px solid #234567;
+    padding-left: 12px;
+}
+
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 12px;
+    }
+
+    #cadastro form {
+        grid-template-columns: 1fr;
+    }
+
+    #cadastro button {
+        grid-column: 1;
+    }
+
+    #tarefas input,
+    #tarefas select {
+        display: block;
+        width: 100%;
+        margin: 6px 0 12px;
+    }
+}
+
